@@ -1,0 +1,357 @@
+*{
+    font-family: 'Inter';
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Romanseco';
+    src: url(../fonts/Romanesco-Regular.ttf);
+}
+/*------header------*/
+
+#menu-encabezado {
+    background-color: #A3A656;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a:hover{
+    color: #FFFF00;
+}
+
+header section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-left: 70px;
+}
+
+header section ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header section a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenido-barrar-derecha {
+    display: flex;
+    align-items: center;
+}
+
+#imagen-usuario img {
+    margin-right: 10px; 
+}
+
+#seleccion-idioma {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+#seleccion-idioma a {
+    margin-right: 10px; 
+}
+
+#seleccion-idioma img {
+    margin-right: 10px; 
+}
+
+/*-------main---------*/
+#seccion-imagen {
+    background-image: url(../images/main.png);
+    height: 500px;
+    background-size: cover;
+    padding: 150px 0 0 150px;
+}
+
+#mensaje-spa{
+    width: 40%;
+}
+
+#mensaje-spa h1 {
+    font-family: 'Romanseco';
+    font-size: 96px;
+    margin: 10px;
+}
+#mensaje-spa h2 {
+    font-size: 32px;
+    margin: 10px;
+}
+
+
+#reservacion {
+    min-height: 100px;
+    background-color: #F2F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#reserva,
+#codigoProm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
+}
+
+#reservacion input {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+#contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 134px 0 0 134px;
+}
+
+
+.reservar {
+    display: flex;
+    height: 100px;
+    background: #F2F6F6;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .reservar p {
+    font-family: 'Inter';
+    font-size: 16px;
+  }
+  
+  .input-reservar {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: 'Inter';
+    font-size: 16px;
+    margin: 0 30px;
+  }
+  
+  .input-codigo {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: 'Inter';
+    font-size: 16px;
+    margin: 0 15px;
+    color: #9E9A9A;
+  }
+  
+  .masajes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+  }
+  
+  .masajes-pies,
+  .masajes-relajante,
+  .masajes-bambu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 67px;
+    width: 350px;
+  }
+  
+
+  .contenedor-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 550;
+    color: #ffffff;
+    background: #A3A656;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .contenedor-boton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .contenedor-boton p {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .boton-reservar {
+    background: #A3A656;
+    border: none;
+    border-radius: 35px;
+    color: #ffffff;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 30px;
+  }
+  
+  .boton-reservar:hover {
+    cursor: pointer;
+    background: #384001;
+  }
+  
+  .membrecias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 770px;
+    background: #f2f6f6;
+  }
+  
+  .titulo-membrecias {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: bold;
+    margin: 40px 0;
+  }
+  
+  .contenedor-membrecias {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .oro,
+  .premium,
+  .plata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 67px;
+  }
+  
+  .oro p,
+  .premium p,
+  .plata p {
+    font-family: 'Inter';  
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  
+  .contenedor-imagen {
+    border: 11px solid #384001;
+    border-radius: 100%;
+    width: 255px;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: #ffffff;
+  }
+  
+  .boton-condiciones {
+    border: none;
+    background: #A3A656;
+    border-radius: 35px;
+    width: 100%;
+    font-family: 'Inter';
+    font-weight: bold;
+    color: #ffffff;
+    padding: 17px 60px;
+    margin: 20px 0;
+  }
+  
+  .boton-condiciones:hover {
+    cursor: pointer;
+    background: #384001;
+  }
+  
+  .lista-beneficios {
+    font-family: 'Inter';
+    font-size: 16px;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    height: 97px;
+    background: #384001;
+    padding: 0 0 0 70px;
+  }
+  
+  .politicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #A3A656;
+    list-style: none;
+  }
+  
+  .politicas li {
+    padding: 0 80px 0 0;
+  }
+  
+  .politicas li:hover {
+    cursor: pointer;
+    color: #ffff00;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #A3A656;
+  }
+  
+  .redes-sociales li {
+    padding: 0 40px 0 0;
+  }
+  
+  .redes-sociales li:hover {
+    cursor: pointer;
+    color: #ffff00;
+  }
